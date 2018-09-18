@@ -29,17 +29,6 @@ p key_for_min_value(name_hash) # => :zob
 
 
 
-   #--- using #sort and <=> ---
-
-def key_for_min_sort(h)
-  min_key = h.sort { |a, b| b[0] <=> a[0] }
-  min_key.first[0]
-   #first -> gives k:v pair with smallest value. [0] -> first element of pair == key of min value!
-end
-
-p key_for_min_sort(name_hash) # => :zoe
-
-
 
   #  -- #sort_by ---
 
